@@ -1,0 +1,25 @@
+@import 'libs/null';
+@import 'libs/fonts';
+// @import "libs/animate";
+
+body {
+   height: 100%;
+   font-family: Inter;
+   font-weight: 400;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   padding: 89px 15px 130px;
+}
+.container {
+   max-width: 1110px;
+   margin: auto;
+}
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/front';
+@import 'blocks/news';
+
+// @import "base/animations";
+// @import "base/media";
