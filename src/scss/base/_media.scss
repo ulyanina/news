@@ -1,4 +1,7 @@
 @media (max-width: 1100px) {
+   .wrapper {
+      // padding: 60px 15px 70px;
+   }
    .promo {
       &__heading {
          font-size: calc(44px + 12 * ((100vw - 769px) / (1110 - 769)));
@@ -120,6 +123,29 @@
          }
       }
    }
+   .news {
+      &__row {
+         gap: 35px;
+      }
+      &__item {
+         gap: 20px;
+         flex-direction: column;
+      }
+      &__img {
+         align-self: center;
+         width: 100px;
+         height: 127px;
+      }
+      &__body {
+         text-align: center;
+      }
+      &__number {
+         margin-bottom: 7px;
+      }
+
+      &__content {
+      }
+   }
 }
 @media (max-width: 576px) {
    .front {
@@ -155,6 +181,14 @@
          margin-bottom: 23px;
       }
    }
+   .news {
+      &__row {
+         gap: 29px;
+      }
+      &__content {
+         line-height: 21px;
+      }
+   }
 }
 @media (max-width: 470px) {
    .promo {
@@ -166,6 +200,20 @@
          font-size: 14px;
       }
       &__button {
+      }
+   }
+   .news {
+      &__row {
+         flex-wrap: wrap;
+         justify-content: center;
+         column-gap: 23px;
+         row-gap: 35px;
+      }
+      &__item {
+         max-width: 46%;
+      }
+      &__content {
+         line-height: 19px;
       }
    }
 }
