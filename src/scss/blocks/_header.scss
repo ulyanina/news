@@ -3,10 +3,14 @@
    justify-content: space-between;
    margin-bottom: 55px;
    width: 100%;
+   & img {
+      margin-right: 50px;
+   }
 }
 .menu {
+   width: 431px;
    &__row {
-      width: 431px;
+      width: 100%;
       height: 26px;
       display: flex;
       justify-content: space-between;
@@ -21,4 +25,7 @@
          }
       }
    }
+}
+.hamburger {
+   display: none;
 }

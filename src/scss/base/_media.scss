@@ -148,6 +148,79 @@
    }
 }
 @media (max-width: 576px) {
+   .menu {
+      display: none;
+
+      &__row {
+         &-active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            // padding: 63px 0 38px;
+            width: 70%;
+            height: 100vh;
+            position: absolute;
+            top: 105px;
+            left: 50%;
+            background: #fff;
+
+            // min-width: 328px;
+            // transform: translateX(-50%);
+            // animation: menu-opacity 0.5s;
+         }
+      }
+      &__item {
+         // margin-top: 32px;
+
+         & a {
+            // font-size: 20px;
+            // line-height: 25px;
+            // // padding-top: 36px;
+            color: $color-darkBlue;
+         }
+         &:last-child {
+            & a {
+               // background: $main-yellow;
+               // font-weight: 700;
+               // font-size: 15px;
+               // text-transform: uppercase;
+               // width: 140px;
+               // height: 56px;
+            }
+         }
+      }
+   }
+   .hamburger {
+      display: block;
+      padding: 10px;
+      & span {
+         display: block;
+         background-color: $color-darkBlue;
+         width: 40px;
+         height: 3px;
+         margin-bottom: 4px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+      &-active {
+         padding: 18px 10px;
+         & span {
+            width: 26px;
+            margin-bottom: -2px;
+            &:nth-child(1) {
+               transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+               display: none;
+            }
+            &:nth-child(3) {
+               transform: translateY(2px) rotate(45deg);
+            }
+         }
+      }
+   }
    .front {
       &__grid {
          grid-template-columns: minmax(200px, 730px);
